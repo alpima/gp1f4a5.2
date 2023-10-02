@@ -1,0 +1,60 @@
+# ASIX2 M08UF1 2023-2024 FJE CLOT
+
+## Requisits
+
+Requereix tenir instal·lat previament:
+1. Git https://git-scm.com/
+2 Virtualbox https://www.virtualbox.org/
+3. Vagrant https://www.vagrantup.com/
+
+## Pasos a seguir
+
+1. Per posar en marxa la màquina virtual, executa:
+
+	vagrant up
+
+des de dins del directori a on es troba el fitxer Vagrantfile
+
+
+
+2. Per accedir a la màquina virtual, executa:
+
+	vagrant ssh
+	
+
+3. Per sortir de la màquina virtual s'ha d'executar:
+
+	exit
+	
+dins de la màquina virtual
+
+
+4. Per aturar la màquina virtual, executa:
+
+	vagrant halt
+
+
+5. Si vols esborrar la màquina virtual, executa:
+
+	vagrant destroy
+
+
+6. Els fitxers del codi PHP es troben
+
+	a) Dins de la màquina virtual a /var/www/html
+	b) Dins de la màquina virtual an .../codi
+
+
+## Problemes amb vagrant ssh
+
+Si no aconseguim accedir amb vagrant ssh, realitza les següents passes:
+
+1. Accedeix a Virtualbox, selecciona la màquina virtual de la formació devops docker i prem el botó de "Mostra". 
+2. Accedeix a la pantalla de terminal de la màquina virtual de Virtuabbox. Això desbloquejarà la creació de la màquina virtual.
+3. Torna a la línia d'ordres i des de dins del directori m08uf1pr2, executa:
+
+vagrant provision
+vagrant ssh
+
+Tanbé podeu accedir directament a la màquina virtual, via Virtualbox, amb usuari `vagrant` i contrasenya `vagrant`.
+
